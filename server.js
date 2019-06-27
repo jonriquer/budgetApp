@@ -32,7 +32,7 @@ app.use(passport.initialize());
 require('./config/passport') (passport);
 
 //Routes
-app.use('./routes/api/users', users);
+app.use('/api/users', users);
 
 // process.env.port is Heroku's port if you chosse to deploy the app there
 const port = process.env.PORT || 5000; 
